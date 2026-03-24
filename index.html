@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prince Dawson Tetteh — speech and audio researcher working on robust ASR, low-resource African speech, privacy-preserving learning, and acoustic intelligence." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Prince Dawson Tetteh | Speech & Audio Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">
+          <span class="brand-mark">PT</span>
+          <span class="brand-text">Prince Dawson Tetteh</span>
+        </a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Speech & Audio Researcher</p>
+            <h1>Building robust speech and audio systems for noisy, low-resource, and under-represented settings.</h1>
+            <p class="lead">
+              I am Prince Dawson Tetteh, a researcher from Ghana focused on robust ASR, acoustic intelligence,
+              privacy-preserving learning, and evaluation under domain shift.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#research">Explore my work</a>
+              <a class="button secondary" href="assets/Prince_Dawson_Tetteh_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
+            <div class="hero-meta">
+              <span>Kumasi, Ghana</span>
+              <span>Robust ASR</span>
+              <span>Low-resource speech</span>
+              <span>Federated learning</span>
+            </div>
+          </div>
+
+          <aside class="hero-card glass-card">
+            <div class="portrait-placeholder">
+              <span>PT</span>
+            </div>
+            <h2>Current focus</h2>
+            <p>
+              Robust speech and audio modeling in Ghanaian and other under-represented acoustic environments,
+              with emphasis on fairness, privacy, and deployment realism.
+            </p>
+            <ul class="compact-list">
+              <li>Ghana Soundscapes Benchmark</li>
+              <li>FedSpeech-Ghana</li>
+              <li>Asante Twi ↔ English speech systems</li>
+              <li>Embedded hearing-aid audio models</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <p class="section-label">About</p>
+            <h2>A research agenda grounded in real acoustic environments.</h2>
+          </div>
+          <div class="flow">
+            <p>
+              My work is motivated by everyday Ghanaian soundscapes: crowded transport stations, market speech,
+              generators during power cuts, and multilingual public environments. I am interested in designing
+              systems that stay reliable when noise, accent, device, and deployment context shift.
+            </p>
+            <p>
+              My broader goal is to build reusable datasets, careful evaluation recipes, and practical tools for speech and audio research that better reflect the realities of African and other low-resource settings.
+            </p>
+            <div class="callout">
+              <strong>Research interests:</strong> robust speech and audio modeling, self-supervised and data-efficient learning,
+              privacy-preserving and federated speech technologies, auditory scene analysis, and evaluation under domain shift.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Research</p>
+              <h2>What I work on</h2>
+            </div>
+            <p class="section-intro">A through-line across my projects is that aggregate performance is not enough. I care about worst-case conditions, group-wise robustness, and deployable systems.</p>
+          </div>
+          <div class="cards-grid three">
+            <article class="info-card">
+              <h3>Robust ASR under domain shift</h3>
+              <p>Speech systems should degrade gracefully as SNR, environment, accent, and hardware change—not only on clean benchmarks.</p>
+            </article>
+            <article class="info-card">
+              <h3>Fairness and privacy</h3>
+              <p>I study learning settings such as federated and privacy-aware training, with attention to worst-group risk and non-IID behavior.</p>
+            </article>
+            <article class="info-card">
+              <h3>Audio perception in realistic scenes</h3>
+              <p>I’m interested in auditory scene analysis, low-resource acoustic intelligence, and compact models for embedded assistive systems.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Selected projects</p>
+              <h2>Research and engineering work</h2>
+            </div>
+          </div>
+
+          <div class="project-list">
+            <article class="project-card glass-card">
+              <div>
+                <p class="project-tag">Dataset · Robust audio</p>
+                <h3>Ghana Soundscapes Benchmark</h3>
+                <p>
+                  Curated an environmental audio dataset from urban Ghana and built integrity-checked manifests with speaker- and location-disjoint splits. Used CNN baselines and augmentation to study robustness under noise, sparsity, and device shift.
+                </p>
+              </div>
+              <a href="https://github.com/pdTetteh/ghana-soundscapes-benchmark" target="_blank" rel="noopener">View repository</a>
+            </article>
+
+            <article class="project-card glass-card">
+              <div>
+                <p class="project-tag">ASR · Federated learning</p>
+                <h3>FedSpeech-Ghana</h3>
+                <p>
+                  Fine-tuned wav2vec 2.0 and simulated federated learning with Ghanaian English accents as non-IID clients, tracking global and per-accent WER to expose optimization and fairness trade-offs.
+                </p>
+              </div>
+              <a href="https://github.com/pdTetteh/fedspeech-ghana" target="_blank" rel="noopener">View repository</a>
+            </article>
+
+            <article class="project-card glass-card">
+              <div>
+                <p class="project-tag">Low-resource speech</p>
+                <h3>SESA: Asante Twi ↔ English Speech</h3>
+                <p>
+                  Contributed to Whisper fine-tuning for Twi and code-switched speech, with emphasis on manifests, normalization, evaluation scripts, and error analysis for rare words and code switching.
+                </p>
+              </div>
+              <span class="muted-link">Ongoing research collaboration</span>
+            </article>
+
+            <article class="project-card glass-card">
+              <div>
+                <p class="project-tag">Embedded audio · Assistive tech</p>
+                <h3>Real-time models for hearing technologies</h3>
+                <p>
+                  Trained compact convolutional, recurrent, and temporal models for sound classification and speech enhancement on low-power systems, balancing latency, memory, and intelligibility.
+                </p>
+              </div>
+              <span class="muted-link">Research project</span>
+            </article>
+
+            <article class="project-card glass-card">
+              <div>
+                <p class="project-tag">Web application</p>
+                <h3>Breast Cancer Detection Web App</h3>
+                <p>
+                  Built a VGG19-based mammogram classifier and deployed an end-to-end web application with a FastAPI backend and React/Tailwind frontend as my undergraduate thesis project.
+                </p>
+              </div>
+              <a href="https://github.com/pdTetteh" target="_blank" rel="noopener">More on GitHub</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Publications</p>
+              <h2>Selected papers and manuscripts</h2>
+            </div>
+          </div>
+
+          <div class="publication-list">
+            <article class="publication-item">
+              <p class="pub-status">Published / Accepted · 2025</p>
+              <h3>Advancing Responsible Artificial Intelligence Ecosystems in African Higher Education Institutions</h3>
+              <p>First author. Oral presentation at PA-AI&amp;SS 2025. To appear in Springer LNICST.</p>
+            </article>
+            <article class="publication-item">
+              <p class="pub-status">Published · 2025</p>
+              <h3>A foundational architecture for engineering an Afrocentric AI training and renewal platform</h3>
+              <p>Co-author. Published in <em>Discover Artificial Intelligence</em>.</p>
+            </article>
+            <article class="publication-item">
+              <p class="pub-status">Under review / In preparation</p>
+              <h3>Speech Enhancement Techniques for Hearing Aids: A Systematic Review</h3>
+              <p>First author. Revised and resubmitted to <em>Universal Access in the Information Society</em>.</p>
+            </article>
+            <article class="publication-item">
+              <p class="pub-status">Under review / In preparation</p>
+              <h3>A Systematic Review of Machine Learning Techniques for Real-Time Speech and Noise Classification in Hearing Aids</h3>
+              <p>Co-author. Revised and resubmitted to <em>Disability and Rehabilitation: Assistive Technology</em>.</p>
+            </article>
+            <article class="publication-item">
+              <p class="pub-status">In preparation</p>
+              <h3>Ghana Soundscapes: A Dataset of Urban Environmental Audio from Ghanaian Cities</h3>
+              <p>Co-author. Data paper in preparation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching" class="section">
+        <div class="container two-col">
+          <div>
+            <p class="section-label">Teaching & leadership</p>
+            <h2>Building inclusive learning structures</h2>
+          </div>
+          <div class="flow">
+            <p>
+              As a teaching assistant in Telecommunication Engineering at KNUST, I have supported undergraduate and postgraduate courses spanning Computer Application and Project Design, Digital Signal Processing, and Responsible AI and Emerging Techniques.
+            </p>
+            <p>
+              I have also served as class representative and organized peer tutorials and Kahoot-based revision sessions during periods of declining performance, helping make difficult material more accessible and collaborative.
+            </p>
+            <div class="stats-grid">
+              <div class="stat">
+                <span class="stat-value">148+</span>
+                <span class="stat-label">students supported</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">Top 5%</span>
+                <span class="stat-label">BSc cohort standing</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">2021–2024</span>
+                <span class="stat-label">class representative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container docs-grid">
+          <article class="doc-card glass-card">
+            <p class="section-label">Documents</p>
+            <h3>Curriculum Vitae</h3>
+            <p>A concise academic CV covering research, teaching, publications, skills, and honours.</p>
+            <a class="text-link" href="assets/Prince_Dawson_Tetteh_CV.pdf" target="_blank" rel="noopener">Open CV</a>
+          </article>
+          <article class="doc-card glass-card">
+            <p class="section-label">Documents</p>
+            <h3>Statement of Purpose</h3>
+            <p>Research goals, current projects, and future PhD directions in robust speech and audio.</p>
+            <a class="text-link" href="assets/Prince_Dawson_Tetteh_SOP.pdf" target="_blank" rel="noopener">Open SOP</a>
+          </article>
+          <article class="doc-card glass-card">
+            <p class="section-label">Documents</p>
+            <h3>Personal Statement</h3>
+            <p>A broader statement on inclusion, mentorship, and how lived experience shapes research.</p>
+            <a class="text-link" href="assets/Prince_Dawson_Tetteh_Personal_Statement.pdf" target="_blank" rel="noopener">Open statement</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-card glass-card">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Let’s connect.</h2>
+            <p>
+              I am interested in collaborations around robust speech and audio understanding for under-represented soundscapes, low-resource ASR, and privacy-aware speech technologies.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:kojodawson570@gmail.com">kojodawson570@gmail.com</a>
+            <a href="https://github.com/pdTetteh" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/prince-dawson-tetteh-4920b1253" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
