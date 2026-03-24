@@ -1,24 +1,23 @@
-# Prince Dawson Tetteh — GitHub Pages site
+# Prince Dawson Tetteh Website
 
-This is a static personal academic website designed for GitHub Pages.
+Static academic portfolio website prepared for GitHub Pages.
 
 ## Files
 - `index.html`
 - `style.css`
 - `script.js`
-- `assets/` for your PDFs
+- `assets/` for the CV, SOP, and personal statement PDFs
 
-## Publish with GitHub Pages
-1. Create a public repository on GitHub.
-2. Upload all files from this folder to the repository root.
-3. Make sure the main file is named `index.html`.
-4. In the repository, go to **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select the `main` branch and the `/root` folder.
-7. Save. Your site will be published at your GitHub Pages URL.
+## Deploy on GitHub Pages
+1. Create a public GitHub repository.
+2. Upload all files in this folder to the repository root.
+3. In GitHub, open **Settings** → **Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select the `main` branch and the `/root` folder.
+6. Save and wait for GitHub Pages to publish the site.
 
-## Best next improvements
-- Add a professional headshot.
-- Add Google Scholar when available.
-- Add direct links for individual papers.
-- Replace the title text once you begin your PhD program.
+## Easy customizations
+- Replace the `PT` monogram with a headshot in the hero card.
+- Add a Google Scholar link once available.
+- Swap colors in `:root` inside `style.css`.
+- Update project and publication entries in `index.html`.
