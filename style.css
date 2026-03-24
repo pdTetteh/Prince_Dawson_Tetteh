@@ -209,22 +209,29 @@ h3 { font-size: 1.28rem; }
 }
 
 .hero-card {
-  padding: 1rem;
+  padding: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .hero-image-frame {
-  border-radius: 28px;
+  width: 96px;
+  min-width: 96px;
+  height: 96px;
+  border-radius: 999px;
   overflow: hidden;
-  aspect-ratio: 4 / 4.3;
   background: #eadfce;
+  border: 4px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 28px rgba(73, 54, 34, 0.12);
 }
 .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 20%;
 }
 .hero-card-text {
-  padding: 1.15rem 0.45rem 0.3rem;
+  padding: 0.1rem 0 0;
 }
 .hero-card-text h2 {
   font-size: 1.8rem;
@@ -416,4 +423,11 @@ h3 { font-size: 1.28rem; }
   .hero { padding: 3rem 0 2rem; }
   .section { padding: 3.5rem 0; }
   .button { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 900px) {
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
